@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+@theme {
+  --color-verde: #104b4f;
+  --color-primary-100: #fffbf2;
+  --color-primary-200: #f0ebe5;
+  --font-sans: "Mulish", sans-serif;
+}
+
+@utility container {
+  margin: 0 auto;
+  padding: 0 0.5rem;
+  @media (width >= 40rem) {
+    padding: 0 1rem;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply bg-verde hover:bg-verde/95 cursor-pointer capitalize text-white text-sm font-semibold px-8 py-6;
+  }
+}
